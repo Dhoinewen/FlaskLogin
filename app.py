@@ -31,6 +31,7 @@ class Tags(db.Model):
 def hello_world():
     return render_template('index.html')
 
+
 @app.route("/main", methods=['GET'])
 def main():
     return render_template('main.html', messages=messages)
